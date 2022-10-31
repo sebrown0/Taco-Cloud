@@ -1,7 +1,9 @@
 package com.sebrown.app.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -9,12 +11,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
+@Document
 @AllArgsConstructor
 @NoArgsConstructor(access=AccessLevel.PRIVATE, force=true)
 public class Ingredient {
 
-	@Id 
+	@Id
   private final String id;
 		
   private final String name;

@@ -3,18 +3,26 @@ server:
   port: 8100
   
 spring:  
-  h2:
-    console:
-      enabled: true
-      path: /console
+#  h2:
+#    console:
+#      enabled: true
+#      path: /console
       
   thymeleaf:
     cache: false
     
-  datasource:
-    url: jdbc:h2:mem:tacocloud
-    generate-unique-name: false
-    name: tacocloud
-    driverClassName: org.h2.Driver
-    username: sa
-    password: 
+#  data:
+#    mongodb:
+#      host: mongodb.tacocloud.com
+#      port: 0
+#      username: tacocloud
+#      password: pass
+#      database: tacoclouddb
+      
+#  datasource:
+#    url: jdbc:h2:mem:tacocloud
+#    generate-unique-name: false
+#    name: tacocloud
+#    driverClassName: org.h2.Driver
+#    username: sa
+#    password: 

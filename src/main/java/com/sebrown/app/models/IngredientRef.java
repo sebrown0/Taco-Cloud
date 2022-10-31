@@ -1,10 +1,8 @@
 package com.sebrown.app.models;
 
-import javax.persistence.Embeddable;
-
 import lombok.Data;
 
-@Data @Embeddable
+@Data 
 public class IngredientRef {
 	private final String ingredient;
 }

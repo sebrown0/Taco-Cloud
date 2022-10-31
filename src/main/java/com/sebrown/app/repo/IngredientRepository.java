@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import com.sebrown.app.models.Ingredient;
 
 public interface IngredientRepository  
-	extends CrudRepository<Ingredient, Long>{
+	extends CrudRepository<Ingredient, String>{
 	   
   Optional<Ingredient> findById(String id);  
   
