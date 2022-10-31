@@ -1,9 +1,9 @@
 package com.sebrown.app.repo;
 
+import org.springframework.data.repository.CrudRepository;
+
 import com.sebrown.app.models.TacoOrder;
 
-public interface OrderRepository {
-	
-	TacoOrder save(TacoOrder tacoOrder);
-	
+public interface OrderRepository extends CrudRepository<TacoOrder, Long> {
+		
 }
